@@ -47,7 +47,7 @@ const randomTexts = [
 ];
 
 const randomtext3 = [
- 'This User Loves Cats and Chapabana',
+ '',
 
 ];
 
@@ -140,7 +140,7 @@ bot.on('ready', async () => {
     const randomButtonText5 = getRandomElement(randomtext5);
     linkButtonone = getRandomElement(randomLinks);
     const pr = new RichPresence()  
-      .setName(`MEMES`)
+      .setName(`This User Loves Cats and Chapabana`)
       .setURL('https://www.twitch.tv/mystiqu3x')
       .setType(`${type}`.toUpperCase())
       .setApplicationId("1214777732840423525")
