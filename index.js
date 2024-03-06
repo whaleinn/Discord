@@ -140,7 +140,7 @@ bot.on('ready', async () => {
     const randomButtonText5 = getRandomElement(randomtext5);
     linkButtonone = getRandomElement(randomLinks);
     const pr = new RichPresence()  
-      .setName(`This User Loves Cats and Chapabana`)
+      .setName(``)
       .setURL('https://www.twitch.tv/mystiqu3x')
       .setType(`${type}`.toUpperCase())
       .setApplicationId("1214777732840423525")
