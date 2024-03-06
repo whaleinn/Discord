@@ -29,7 +29,7 @@ let linkButtonone = "";
 const xxxx = ['The 999th member in Cat Society'];
 
 const randomTexts = [
-  '',
+  'Meow Meow',
 
 
 ];
@@ -40,7 +40,7 @@ const randomtext3 = [
 ];
 
 const randomtext4 = [
-  '',
+  'Meow Meow',
 
 
 ];
