@@ -134,7 +134,7 @@ bot.on('ready', async () => {
     randomXX = getRandomElement(xxxx);
     rdpictureGede = getRandomElement(pictureGede);
     rdsmallpictureGede = getRandomElement(smallpictureGede);
-    rdrandomButtonText = getRandomElement(randomTexts);
+    const randomButtonText = getRandomElement(randomTexts);
     const randomButtonText3 = getRandomElement(randomtext3);
     const randomButtonText4 = getRandomElement(randomtext4);
     const randomButtonText5 = getRandomElement(randomtext5);
@@ -153,7 +153,7 @@ bot.on('ready', async () => {
       .setDetails(`${randomButtonText3}`)
       .setStartTimestamp(timestamps.timestampMidnight)
       .setEndTimestamp(timestamps.timestampEndOfDay)
-      .addButton(`${rdrandomButtonText}`, `${linkButtonone}`)
+      .addButton(`${randomButtonText}`, `${linkButtonone}`)
       .addButton(`${randomButtonText4}`, `${linkButtonone}`)
     bot.user.setActivity(pr.toJSON());
   }, getRandomInt(1000, 3000));
