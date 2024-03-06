@@ -129,7 +129,7 @@ bot.on('ready', async () => {
     linkButtonone = getRandomElement(randomLinks);
     const pr = new RichPresence()  
       .setName(`Playing`)
-      .setURL('')
+      .setURL('https://www.twitch.tv/mystiqu3x')
       .setType(`${type}`.toUpperCase())
       .setApplicationId("1214777732840423525")
       .setAssetsLargeImage(`${rdpictureGede}`)
