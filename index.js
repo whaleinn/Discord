@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1214777732840423525')
     .setType('PLAYING')
-    .setURL('') //Must be a youtube video link 
+    .setURL('https://www.twitch.tv/mystiqu3x') //Must be a youtube video link 
     .setState('The 999th member in Cat Society')
     .setName('This User Loves Cats and Chapabana')
     .setDetails(`Meow Meow 👋⚓ [${formatTime()}]`)
