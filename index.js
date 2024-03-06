@@ -131,7 +131,7 @@ bot.on('ready', async () => {
       .setName(`Playing`)
       .setURL('')
       .setType(`${type}`.toUpperCase())
-      .setApplicationId("1159127696064905256")
+      .setApplicationId("1214777732840423525")
       .setAssetsLargeImage(`${rdpictureGede}`)
       .setAssetsSmallImage(`${rdsmallpictureGede}`)
       .setAssetsLargeText(`
