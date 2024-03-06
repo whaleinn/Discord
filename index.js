@@ -7,7 +7,7 @@ const bot = new Client({ checkUpdate: false });
 const textmain = "";
 const textthree = "";
 const textfour = "";
-const type = "DND";
+const type = "dnd";
 const pictureGede = [
 "https://media.discordapp.net/attachments/1060830136414519336/1214774061494698065/arnold_13.png?ex=65fa5581&is=65e7e081&hm=2edf4ee4fc83098b45a1fb85c29d096f05b919d62cb647547092156441236e7e&=&format=webp&quality=lossless",
 "https://media.discordapp.net/attachments/1060830136414519336/1214774062128304208/arnold_15.png?ex=65fa5581&is=65e7e081&hm=3f72eac1f4d958f65f36391a4c172837f603938771dfa421bc95ede5e26c0996&=&format=webp&quality=lossless",
@@ -21,23 +21,35 @@ const pictureGede = [
 "https://media.discordapp.net/attachments/1060830136414519336/1214774064581845012/arnold_12.png?ex=65fa5582&is=65e7e082&hm=047d8238f245151d5e06caf5341ff3aa6505e9ae7f3c799c936a06cff70958cb&=&format=webp&quality=lossless",
                          ];
 const smallpictureGede = [
-  "https://cdn.discordapp.com/emojis/966116896405606420.gif?size=96&quality=lossless"
+  "https://cdn.discordapp.com/emojis/731154864360390726.gif?size=96&quality=lossless",
                     ];
 const nameButtonone = "";
 let linkButtonone = "";
 
 const xxxx = ['The 999th member in Cat Society'];
 
+const randomTexts = [
+  '',
 
-const randomtext3 = [
- 'This user is a neko lover',
-  'This user loves cats and chapabana'
 
 ];
 
+const randomtext3 = [
+ 'This User Loves Cats and Chapabana',
+
+];
+
+const randomtext4 = [
+  '',
+
+
+];
 
 const randomtext5 = [];
 
+const randomLinks = [
+  "",
+];
 
 
 function getRandomInt(min, max) {
@@ -110,20 +122,27 @@ bot.on('ready', async () => {
     randomXX = getRandomElement(xxxx);
     rdpictureGede = getRandomElement(pictureGede);
     rdsmallpictureGede = getRandomElement(smallpictureGede);
-    
+    const randomButtonText = getRandomElement(randomTexts);
+    const randomButtonText3 = getRandomElement(randomtext3);
+    const randomButtonText4 = getRandomElement(randomtext4);
+    const randomButtonText5 = getRandomElement(randomtext5);
+    linkButtonone = getRandomElement(randomLinks);
     const pr = new RichPresence()  
-      .setName(`Do not Disturb`)
+      .setName(`Playing`)
+      .setURL('')
       .setType(`${type}`.toUpperCase())
-      .setApplicationId("1214777732840423525")
+      .setApplicationId("1159127696064905256")
       .setAssetsLargeImage(`${rdpictureGede}`)
       .setAssetsSmallImage(`${rdsmallpictureGede}`)
       .setAssetsLargeText(`
 🌡${roundedNumber} °C ⋆ 🍃 ${roundwNumber} m/s`)
       .setAssetsSmallText(`ping: ${bot.ws.ping}ms`)
       .setState(`: ${randomXX}`)
+      .setDetails(`${randomButtonText3}`)
       .setStartTimestamp(timestamps.timestampMidnight)
       .setEndTimestamp(timestamps.timestampEndOfDay)
-    
+      .addButton(`${randomButtonText}`, `${linkButtonone}`)
+      .addButton(`${randomButtonText4}`, `${linkButtonone}`)
     bot.user.setActivity(pr.toJSON());
   }, getRandomInt(1000, 3000));
   console.log(`${bot.user.tag} Status is showed up !!`);
