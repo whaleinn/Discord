@@ -48,7 +48,7 @@ const randomtext4 = [
 const randomtext5 = [];
 
 const randomLinks = [
-  "",
+  "https://www.twitch.tv/mystiqu3x",
 ];
 
 
