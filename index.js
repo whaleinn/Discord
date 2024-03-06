@@ -7,7 +7,7 @@ const bot = new Client({ checkUpdate: false });
 const textmain = "";
 const textthree = "";
 const textfour = "";
-const type = "CUSTOM";
+const type = "PLAYING";
 const pictureGede = [
 "https://media.discordapp.net/attachments/1060830136414519336/1214774061494698065/arnold_13.png?ex=65fa5581&is=65e7e081&hm=2edf4ee4fc83098b45a1fb85c29d096f05b919d62cb647547092156441236e7e&=&format=webp&quality=lossless",
 "https://media.discordapp.net/attachments/1060830136414519336/1214774062128304208/arnold_15.png?ex=65fa5581&is=65e7e081&hm=3f72eac1f4d958f65f36391a4c172837f603938771dfa421bc95ede5e26c0996&=&format=webp&quality=lossless",
