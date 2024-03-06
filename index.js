@@ -38,9 +38,6 @@ const randomtext3 = [
 
 const randomtext5 = [];
 
-const randomLinks = [
-  "https://www.twitch.tv/mystiqu3x",
-];
 
 
 function getRandomInt(min, max) {
@@ -124,7 +121,6 @@ bot.on('ready', async () => {
 🌡${roundedNumber} °C ⋆ 🍃 ${roundwNumber} m/s`)
       .setAssetsSmallText(`ping: ${bot.ws.ping}ms`)
       .setState(`: ${randomXX}`)
-      .setDetails(`${randomButtonText3}`)
       .setStartTimestamp(timestamps.timestampMidnight)
       .setEndTimestamp(timestamps.timestampEndOfDay)
     
