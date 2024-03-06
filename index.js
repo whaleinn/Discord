@@ -47,7 +47,7 @@ const randomTexts = [
 ];
 
 const randomtext3 = [
- '',
+ 'Be One Of Us',
 
 ];
 
@@ -134,13 +134,13 @@ bot.on('ready', async () => {
     randomXX = getRandomElement(xxxx);
     rdpictureGede = getRandomElement(pictureGede);
     rdsmallpictureGede = getRandomElement(smallpictureGede);
-    const randomButtonText = getRandomElement(randomTexts);
+    rdrandomButtonText = getRandomElement(randomTexts);
     const randomButtonText3 = getRandomElement(randomtext3);
     const randomButtonText4 = getRandomElement(randomtext4);
     const randomButtonText5 = getRandomElement(randomtext5);
     linkButtonone = getRandomElement(randomLinks);
     const pr = new RichPresence()  
-      .setName(``)
+      .setName(`This User Loves Cats and Chapabana`)
       .setURL('https://www.twitch.tv/mystiqu3x')
       .setType(`${type}`.toUpperCase())
       .setApplicationId("1214777732840423525")
