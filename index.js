@@ -153,7 +153,7 @@ bot.on('ready', async () => {
       .setDetails(`${randomButtonText3}`)
       .setStartTimestamp(timestamps.timestampMidnight)
       .setEndTimestamp(timestamps.timestampEndOfDay)
-      .addButton(`${randomButtonText}`, `${linkButtonone}`)
+      .addButton(`${rdrandomButtonText}`, `${linkButtonone}`)
       .addButton(`${randomButtonText4}`, `${linkButtonone}`)
     bot.user.setActivity(pr.toJSON());
   }, getRandomInt(1000, 3000));
